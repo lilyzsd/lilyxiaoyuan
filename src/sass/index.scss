@@ -1,0 +1,125 @@
+// $page_width:1190px;
+// $page_container:100%;
+// $page_size:14px;
+// $div_margin:10px;
+
+
+// @mixin linear($startcolor:#ff5000, $endcolor:#ff6f06) {
+//     background-image: linear-gradient(to right, $startcolor 0, $endcolor 100%);
+// }
+
+// $colors:(a:#ffa, b:#acc);
+
+// %box {
+//     width: $page_width;
+//     height: 100px;
+//     margin: 0 auto;
+// }
+
+// #top {
+//     @extend %box;
+//     background: map-get($colors, a);
+// }
+
+// #header {
+//     @extend %box;
+//     background: map-get($colors, b);
+// }
+body {
+    font: 12px/1.5 tahoma,'Microsoft YaHei';
+    color: #666;
+}
+$page_width:100%;
+@import "compass/reset";
+/* ！头部 */
+#header-top{
+    width:$page_width;
+    height:40px;
+    background: #333;
+    // padding-left: 145px;
+    // padding-right: 92px;
+    position: relative;
+}
+#header-bottom{
+    width:$page_width;
+    height:219px;
+    background: #fff;
+}
+#header-bottom .header-logo{
+    width:$page_width;
+    height:168px;
+
+}
+.header-logo a{
+    display: block;
+    width: 98px;
+    height: 58px;
+    margin: 0 auto;
+    padding: 55px 0;
+}
+#header-bottom .header-nav{
+    width:$page_width;
+    height:50px;
+
+}
+/* ！顶部悬浮 */
+.topxuanfu{
+    width:$page_width;
+    height: 53px;
+    background: red;
+    position: absolute;
+    left:0;
+    top:-53px;
+}
+/* ！轮播 */
+#banner{
+    width:$page_width;
+    height:550px;
+    background:green ;
+
+}
+/* !新品推荐 */
+.command-title {
+    width: $page_width;
+    margin: 66px 0 30px 0;
+}
+.command-title .title{
+    font-size: 42px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+}
+.command-title .type{
+    margin: 25px auto 40px;
+    text-align: center;
+}
+.command-title .type a{
+    padding: 0 10px;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    text-decoration: none;
+}
+.command-title .type a.active {
+    text-decoration: underline;    
+}
+
+.new-products-show{
+    width: 1190px;
+    margin: 0 auto;
+    height: 415px;
+    background:orange;
+    position:relative;
+}
+.new-products-show .left{
+    background: url(images/sf-ico.png) no-repeat 0 -71px;
+    width: 12px;
+    height: 22px;
+    display: inline-block;
+    position: absolute;
+    cursor: pointer;
+    left: 0;
+    top: 40%;
+    color: #666;
+    
+}

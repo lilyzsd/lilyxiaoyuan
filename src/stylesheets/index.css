@@ -1,0 +1,184 @@
+@charset "UTF-8";
+/* line 28, ../sass/index.scss */
+body {
+  font: 12px/1.5 tahoma,'Microsoft YaHei';
+  color: #666;
+}
+
+/* line 5, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* ！头部 */
+/* line 35, ../sass/index.scss */
+#header-top {
+  width: 100%;
+  height: 40px;
+  background: #333;
+  position: relative;
+}
+
+/* line 43, ../sass/index.scss */
+#header-bottom {
+  width: 100%;
+  height: 219px;
+  background: #fff;
+}
+
+/* line 48, ../sass/index.scss */
+#header-bottom .header-logo {
+  width: 100%;
+  height: 168px;
+}
+
+/* line 53, ../sass/index.scss */
+.header-logo a {
+  display: block;
+  width: 98px;
+  height: 58px;
+  margin: 0 auto;
+  padding: 55px 0;
+}
+
+/* line 60, ../sass/index.scss */
+#header-bottom .header-nav {
+  width: 100%;
+  height: 50px;
+}
+
+/* ！顶部悬浮 */
+/* line 66, ../sass/index.scss */
+.topxuanfu {
+  width: 100%;
+  height: 53px;
+  background: red;
+  position: absolute;
+  left: 0;
+  top: -53px;
+}
+
+/* ！轮播 */
+/* line 75, ../sass/index.scss */
+#banner {
+  width: 100%;
+  height: 550px;
+  background: green;
+}
+
+/* !新品推荐 */
+/* line 82, ../sass/index.scss */
+.command-title {
+  width: 100%;
+  margin: 66px 0 30px 0;
+}
+
+/* line 86, ../sass/index.scss */
+.command-title .title {
+  font-size: 42px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
+
+/* line 92, ../sass/index.scss */
+.command-title .type {
+  margin: 25px auto 40px;
+  text-align: center;
+}
+
+/* line 96, ../sass/index.scss */
+.command-title .type a {
+  padding: 0 10px;
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* line 103, ../sass/index.scss */
+.command-title .type a.active {
+  text-decoration: underline;
+}
+
+/* line 107, ../sass/index.scss */
+.new-products-show {
+  width: 1190px;
+  margin: 0 auto;
+  height: 415px;
+  background: orange;
+  position: relative;
+}
+
+/* line 114, ../sass/index.scss */
+.new-products-show .left {
+  background: url(images/sf-ico.png) no-repeat 0 -71px;
+  width: 12px;
+  height: 22px;
+  display: inline-block;
+  position: absolute;
+  cursor: pointer;
+  left: 0;
+  top: 40%;
+  color: #666;
+}
