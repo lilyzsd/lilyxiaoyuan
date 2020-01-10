@@ -1,125 +1,190 @@
-// $page_width:1190px;
-// $page_container:100%;
-// $page_size:14px;
-// $div_margin:10px;
+/* --------------------------------------------------开始写------------------------------------------------------ */
 
+@charset "utf-8";
 
-// @mixin linear($startcolor:#ff5000, $endcolor:#ff6f06) {
-//     background-image: linear-gradient(to right, $startcolor 0, $endcolor 100%);
-// }
+$page_width: 100%;
+$page_color: #666;
 
-// $colors:(a:#ffa, b:#acc);
-
-// %box {
-//     width: $page_width;
-//     height: 100px;
-//     margin: 0 auto;
-// }
-
-// #top {
-//     @extend %box;
-//     background: map-get($colors, a);
-// }
-
-// #header {
-//     @extend %box;
-//     background: map-get($colors, b);
-// }
 body {
-    font: 12px/1.5 tahoma,'Microsoft YaHei';
-    color: #666;
+    // font: 12px/1.5 tahoma,'Microsoft YaHei';
+    color: $page_color;
+    font-style: tahoma,'Microsoft YaHei';
 }
-$page_width:100%;
-@import "compass/reset";
-/* ！头部 */
-#header-top{
-    width:$page_width;
-    height:40px;
-    background: #333;
-    // padding-left: 145px;
-    // padding-right: 92px;
-    position: relative;
-}
-#header-bottom{
-    width:$page_width;
-    height:219px;
-    background: #fff;
-}
-#header-bottom .header-logo{
-    width:$page_width;
-    height:168px;
 
+li {
+    list-style: none;
 }
-.header-logo a{
+
+a {
+    text-decoration: none;
+}
+
+.clear:after {
+    content: "";
     display: block;
-    width: 98px;
-    height: 58px;
-    margin: 0 auto;
-    padding: 55px 0;
+    clear: both;
 }
-#header-bottom .header-nav{
-    width:$page_width;
-    height:50px;
 
-}
-/* ！顶部悬浮 */
-.topxuanfu{
-    width:$page_width;
+//设置中文编码
+@import "top";
+@import "compass/reset";
+
+/* ！------------------------------------------------------顶部悬浮----------------------------------------------- */
+.topxuanfu {
+    width: $page_width;
     height: 53px;
     background: red;
     position: absolute;
-    left:0;
-    top:-53px;
+    left: 0;
+    top: -53px;
 }
-/* ！轮播 */
-#banner{
-    width:$page_width;
-    height:550px;
-    background:green ;
 
-}
-/* !新品推荐 */
-.command-title {
+/* ！---------------------------------------------------------轮播------------------------------------------------- */
+#banner {
     width: $page_width;
-    margin: 66px 0 30px 0;
+    height: 550px;
+    background: green;
 }
-.command-title .title{
+
+/* !-------------------------------------------------------新品推荐------------------------------------------------- */
+#command-new-products {
+    width: 1349px;
+    height: 567px;
+    background: orange;
+}
+
+%commandtitle {
     font-size: 42px;
     font-weight: 600;
     color: #333;
     text-align: center;
-}
-.command-title .type{
-    margin: 25px auto 40px;
-    text-align: center;
-}
-.command-title .type a{
-    padding: 0 10px;
-    font-size: 16px;
-    color: #333;
-    text-align: center;
-    text-decoration: none;
-}
-.command-title .type a.active {
-    text-decoration: underline;    
+    height: 63px;
+    line-height: 63px;
 }
 
-.new-products-show{
+.command-title {
+    width: $page_width;
+    margin: 66px 0 30px 0;
+
+    .title {
+        @extend %commandtitle;
+    }
+
+    .type {
+        margin: 25px auto 40px;
+        text-align: center;
+
+        a {
+            padding: 0 10px;
+            font-size: 16px;
+            line-height: 16px;
+
+            // 字体大小有问题
+            color: #333;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        a.active {
+            text-decoration: underline;
+        }
+    }
+}
+
+.new-products-show {
     width: 1190px;
     margin: 0 auto;
     height: 415px;
-    background:orange;
-    position:relative;
+    background: rgb(255, 60, 0);
+    position: relative;
+
+    %arrow {
+        width: 12px;
+        height: 22px;
+        display: inline-block;
+        position: absolute;
+        cursor: pointer;
+        top: 40%;
+        color: $page_color;
+    }
+
+    .left {
+        @extend %arrow;
+
+        background: url(../images/sf-ico.png) no-repeat 0 -71px;
+        left: 0;
+    }
+
+    .right {
+        @extend %arrow;
+
+        background: url(../images/sf-ico.png) no-repeat -13px -71px;
+        right: 0;
+    }
 }
-.new-products-show .left{
-    background: url(images/sf-ico.png) no-repeat 0 -71px;
-    width: 12px;
-    height: 22px;
-    display: inline-block;
-    position: absolute;
-    cursor: pointer;
-    left: 0;
-    top: 40%;
-    color: #666;
-    
+
+/*! --------------------------------------------今日主推大牌------------------------------------------------- */
+#command-brand {
+    width: 1349px;
+    height: 786px;
+    background: greenyellow;
+
+    .command-brand-image {
+        width: 1349px;
+        height: 634px;
+        border: 1px solid red;
+        padding-top: 60px;
+
+        .img-show {
+            width: 990px;
+            margin: 0 auto;
+
+            li {
+                background: palevioletred;
+                width: 315px;
+                height: 402px;
+                float: left;
+
+                a {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            li:nth-of-type(2) {
+                margin: 0 18px;
+                background: powderblue;
+            }
+        }
+    }
+
+    .brand-show {
+        width: 990px;
+        margin: 0 auto;
+        padding: 66px 0;
+        height: 40px;
+        position: relative;
+        overflow: hidden;
+            .left {
+                @extend %arrow;
+                left: 0;
+                top: 42%;
+                background: url(../images/sf-ico.png) no-repeat 0 -71px;
+                width: 12px;
+                height: 22px;
+                display: inline-block;
+                position: absolute;
+                cursor: pointer;
+                color: $page_color;
+            }
+    }
+}
+
+/* !--------------------------------------------品牌潮流资讯----------------------------------------------------- */
+#brand-fashion {
+    width: 1190px;
+    height: 602px;
+    background: green;
+    padding-top: 60px;
 }
