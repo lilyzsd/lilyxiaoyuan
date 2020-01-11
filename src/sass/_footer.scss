@@ -1,0 +1,125 @@
+@charset "utf-8"; //设置中文编码
+/* !--------------------------------尾部---------------------- */
+#footer {
+    width: 100%;
+    background: #333;
+
+    .footer-top {
+        font-family: '宋体';
+        width: 100%;
+        border-bottom: 1px solid #666;
+
+        .customer-service {
+            width: 1190px;
+            margin: 0 auto;
+            height: 27px;
+            padding: 46px 0 42px;
+            font-size: 18px;
+
+            li {
+                float: left;
+                margin-left: 50px;
+
+                i {
+                    float: left;
+                    vertical-align: middle;
+                    width: 27px;
+                    height: 27px;
+                    background: url(../images/css_sprites.png) -10px -10px;
+                }
+
+                a {
+                    margin-left: 10px;
+                    color: #fff;
+                }
+            }
+
+            li:nth-of-type(1) {
+                margin-left: 0px;
+            }
+
+            li:nth-of-type(2) i {
+                background-position: -57px -57px;
+            }
+
+            li:nth-of-type(3) i {
+                background-position: -10px -57px;
+            }
+
+            li:nth-of-type(4) i {
+                background-position: -57px -10px;
+            }
+        }
+    }
+
+    .footer-bot {
+        height: 476px;
+
+        .footer-help {
+            width: 1190px;
+            margin: 0 auto;
+            margin-top: 25px;
+            background: red;
+
+            li {
+                float: left;
+                margin-left: 90px;
+                color: #fff;
+            }
+
+            li:nth-of-type(1) {
+                margin-left: 0;
+            }
+        }
+
+        .footer-help a {
+            color: #666;
+            display: block;
+            margin-top: 15px;
+        }
+
+        .margin20 {
+            margin-top: 20px;
+        }
+
+        .consult {
+            display: inline-block;
+            vertical-align: middle;
+            width: 17px;
+            height: 13px;
+            background: url(../images/css_sprites.png) -124px -140px;
+        }
+
+        a:hover {
+            color: #fff;
+        }
+
+        .certification {
+            width: 1190px;
+            margin: 0 auto;
+        }
+
+        .certification ul {
+            float: left;
+        }
+
+        .certification li {
+            display: inline-block;
+            margin-left: 12px;
+        }
+    }
+
+    .certification .beian {
+        margin-top: 160px;
+         img{
+             height: 47px;
+         }
+        .img1 {
+            width: 116px;
+        }
+        .img2,.im3{
+            width: 124px;
+        }
+
+    }
+}
