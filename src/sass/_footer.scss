@@ -59,8 +59,6 @@
             width: 1190px;
             margin: 0 auto;
             margin-top: 25px;
-            background: red;
-
             li {
                 float: left;
                 margin-left: 90px;
@@ -94,13 +92,13 @@
             color: #fff;
         }
 
-        .certification {
+        .certification, .friendly-link,.copyright {
             width: 1190px;
             margin: 0 auto;
         }
 
         .certification ul {
-            float: left;
+            display: inline-block;
         }
 
         .certification li {
@@ -111,15 +109,70 @@
 
     .certification .beian {
         margin-top: 160px;
-         img{
-             height: 47px;
-         }
+        vertical-align: bottom;
+
+        img {
+            height: 47px;
+        }
+
         .img1 {
             width: 116px;
         }
-        .img2,.im3{
+
+        .img2, .im3 {
             width: 124px;
         }
+    }
+ 
+    .certification .erweima {
+        margin-left: 200px;
+        vertical-align: bottom;
 
+        .border img {
+            display: block;
+            padding: 8px 7.5px;
+            background: #fff;
+            margin-bottom: 12px;
+        }
+
+        p {
+            color: #fff;
+            text-align: center;
+        }
+
+        .padding54 {
+            margin-left: 0;
+            padding-left: 54px;
+
+            img {
+                margin-bottom: 12px;
+            }
+        }
+    }
+
+    .friendly-link {
+        padding-top: 25px;
+
+        li {
+            display: inline-block;
+
+            a {
+                margin: 0 10px;
+                color: #fff;
+            }
+
+            .marginleft0 {
+                margin-left: 0;
+            }
+        }
+    }
+
+    .copyright {
+        padding: 15px 0 35px;
+        color: #fff;
+
+        a {
+            color: #fff;
+        }
     }
 }

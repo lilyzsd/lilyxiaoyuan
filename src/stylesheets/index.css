@@ -80,25 +80,24 @@ body {
   font: 12px/1.5 tahoma,'Microsoft YaHei';
   color: #666;
   font-style: tahoma,'Microsoft YaHei';
-  height: 5000px;
 }
 
-/* line 28, ../sass/index.scss */
+/* line 26, ../sass/index.scss */
 li {
   list-style: none;
 }
 
-/* line 32, ../sass/index.scss */
+/* line 30, ../sass/index.scss */
 a {
   text-decoration: none;
 }
 
-/* line 36, ../sass/index.scss */
+/* line 34, ../sass/index.scss */
 img {
   display: block;
 }
 
-/* line 40, ../sass/index.scss */
+/* line 38, ../sass/index.scss */
 .clear:after {
   content: "";
   display: block;
@@ -113,19 +112,149 @@ img {
   background: #333;
   position: relative;
 }
+/* line 10, ../sass/_top.scss */
+#header-top .head-left {
+  float: left;
+  margin-left: 145px;
+}
+/* line 15, ../sass/_top.scss */
+#header-top .head-right {
+  float: right;
+  margin-right: 92px;
+}
+/* line 19, ../sass/_top.scss */
+#header-top .head-right .pading-r11 {
+  padding-right: 11px;
+}
+/* line 23, ../sass/_top.scss */
+#header-top .head-right .padding11 {
+  padding: 0 11px;
+}
+/* line 27, ../sass/_top.scss */
+#header-top .head-right .padding22 {
+  padding: 0 22px;
+  position: relative;
+}
+/* line 31, ../sass/_top.scss */
+#header-top .head-right .padding22 .notice-list {
+  position: absolute;
+  width: 180px;
+  background: #fff;
+  border: 1px solid #eee;
+  margin-top: 4px;
+  padding: 15px 15px 30px 20px;
+  z-index: 10000;
+  right: 12px;
+  top: 40px;
+  display: none;
+}
+/* line 43, ../sass/_top.scss */
+#header-top .head-right .padding22 .notice-list a {
+  display: block;
+  color: #666;
+  line-height: 20px;
+  font-family: 'Microsoft YaHei';
+}
+/* line 50, ../sass/_top.scss */
+#header-top .head-right .padding22 .notice-list .item {
+  padding-bottom: 8px;
+  border-bottom: #eee 1px solid;
+}
+/* line 55, ../sass/_top.scss */
+#header-top .head-right .padding22 .notice-list .item1 {
+  padding-top: 10px;
+}
+/* line 61, ../sass/_top.scss */
+#header-top .head-right .padding22:hover .notice-list {
+  display: block;
+}
+/* line 65, ../sass/_top.scss */
+#header-top .head-right .margin-l13 {
+  margin-left: 13px;
+}
+/* line 69, ../sass/_top.scss */
+#header-top .head-right .collect i {
+  display: inline-block;
+  width: 12px;
+  height: 11px;
+  background: url(../images/css_sprites.png) -78px -174px;
+  padding-right: 5px;
+  vertical-align: middle;
+}
+/* line 78, ../sass/_top.scss */
+#header-top .head-right .shopping-bag i {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: url(../images/css_sprites.png) -10px -197px;
+  padding: 4px 2px 0 0;
+  vertical-align: middle;
+}
+/* line 88, ../sass/_top.scss */
+#header-top li {
+  display: inline-block;
+  line-height: 40px;
+  font-family: '宋体';
+}
+/* line 93, ../sass/_top.scss */
+#header-top li a {
+  color: #fff;
+}
+/* line 97, ../sass/_top.scss */
+#header-top li a:hover {
+  color: #666;
+}
+/* line 101, ../sass/_top.scss */
+#header-top li .scan-code {
+  position: relative;
+}
+/* line 104, ../sass/_top.scss */
+#header-top li .scan-code .scodecontent {
+  position: absolute;
+  display: none;
+  z-index: 10000;
+  left: -60px;
+  width: 140px;
+  background: #fff;
+  margin-top: 4px;
+  border: 1px solid #eee;
+}
+/* line 115, ../sass/_top.scss */
+#header-top li .scan-code .scodecontent img {
+  width: 120px;
+  height: 120px;
+  margin: 10px auto 12px;
+  display: block;
+}
+/* line 122, ../sass/_top.scss */
+#header-top li .scan-code .scodecontent span {
+  display: block;
+  margin: 10px 0 18px;
+  line-height: 0;
+  color: #333;
+  text-align: center;
+}
+/* line 131, ../sass/_top.scss */
+#header-top li a:hover .scodecontent {
+  display: block;
+}
+/* line 136, ../sass/_top.scss */
+#header-top .head-left li:nth-of-type(2) {
+  margin-left: 20px;
+}
 
-/* line 11, ../sass/_top.scss */
+/* line 141, ../sass/_top.scss */
 #header-bottom {
   width: 100%;
   height: 219px;
-  background: #fff;
 }
-/* line 16, ../sass/_top.scss */
+/* line 145, ../sass/_top.scss */
 #header-bottom .header-logo {
   width: 100%;
   height: 168px;
+  background: pink;
 }
-/* line 20, ../sass/_top.scss */
+/* line 150, ../sass/_top.scss */
 #header-bottom .header-logo a {
   display: block;
   width: 98px;
@@ -133,14 +262,82 @@ img {
   margin: 0 auto;
   padding: 55px 0;
 }
-/* line 29, ../sass/_top.scss */
+/* line 159, ../sass/_top.scss */
 #header-bottom .header-nav {
-  width: 100%;
+  width: 1190px;
+  margin: 0 auto;
+}
+/* line 163, ../sass/_top.scss */
+#header-bottom .header-nav .nav {
+  float: left;
+  width: 930px;
   height: 50px;
+}
+/* line 169, ../sass/_top.scss */
+#header-bottom .header-nav .nav li {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 20px;
+  width: 80px;
+  line-height: 50px;
+  padding: 0 15px;
+}
+/* line 177, ../sass/_top.scss */
+#header-bottom .header-nav .nav li a {
+  font-weight: bold;
+  color: #333;
+}
+/* line 183, ../sass/_top.scss */
+#header-bottom .header-nav .nav li:hover a {
+  text-decoration: underline;
+}
+/* line 188, ../sass/_top.scss */
+#header-bottom .header-nav .search {
+  float: right;
+  margin-top: 15px;
+  margin-left: 80px;
+}
+/* line 192, ../sass/_top.scss */
+#header-bottom .header-nav .search form {
+  width: 180px;
+  height: 22px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 2px;
+  position: relative;
+}
+/* line 198, ../sass/_top.scss */
+#header-bottom .header-nav .search form input {
+  padding: 0;
+  width: 160px;
+  border: 0;
+  outline: 0;
+  font-size: 12px;
+  height: 20px;
+}
+/* line 207, ../sass/_top.scss */
+#header-bottom .header-nav .search form .searchmenu {
+  width: 180px;
+  top: 29px;
+  background: none repeat scroll 0 0 #fff;
+  box-shadow: 0 0 5px #ccc;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: 999;
+  font-size: 12px;
+  color: #333;
+}
+/* line 221, ../sass/_top.scss */
+#header-bottom .header-nav .search form .btn-search {
+  display: inline-block;
+  cursor: pointer;
+  width: 15px;
+  height: 16px;
+  background: url(../images/css_sprites.png) -177px -10px;
 }
 
 /* ！------------------------------------------------------顶部悬浮----------------------------------------------- */
-/* line 50, ../sass/index.scss */
+/* line 48, ../sass/index.scss */
 .topxuanfu {
   width: 100%;
   height: 53px;
@@ -151,7 +348,7 @@ img {
 }
 
 /* ！---------------------------------------------------------轮播------------------------------------------------- */
-/* line 60, ../sass/index.scss */
+/* line 58, ../sass/index.scss */
 #banner {
   width: 100%;
   height: 550px;
@@ -159,14 +356,14 @@ img {
 }
 
 /* !-------------------------------------------------------新品推荐中间1------------------------------------------------- */
-/* line 67, ../sass/index.scss */
+/* line 65, ../sass/index.scss */
 #command-new-products {
   width: 1349px;
   height: 567px;
   background: orange;
 }
 
-/* line 74, ../sass/index.scss */
+/* line 72, ../sass/index.scss */
 .command-title .title {
   font-size: 42px;
   font-weight: 600;
@@ -176,17 +373,17 @@ img {
   line-height: 63px;
 }
 
-/* line 83, ../sass/index.scss */
+/* line 81, ../sass/index.scss */
 .command-title {
   width: 100%;
   margin: 66px 0 30px 0;
 }
-/* line 91, ../sass/index.scss */
+/* line 89, ../sass/index.scss */
 .command-title .type {
   margin: 25px auto 40px;
   text-align: center;
 }
-/* line 95, ../sass/index.scss */
+/* line 93, ../sass/index.scss */
 .command-title .type a {
   padding: 0 10px;
   font-size: 16px;
@@ -195,12 +392,12 @@ img {
   text-align: center;
   text-decoration: none;
 }
-/* line 106, ../sass/index.scss */
+/* line 104, ../sass/index.scss */
 .command-title .type a.active {
   text-decoration: underline;
 }
 
-/* line 113, ../sass/index.scss */
+/* line 111, ../sass/index.scss */
 .new-products-show {
   width: 1190px;
   margin: 0 auto;
@@ -208,13 +405,13 @@ img {
   background: #ff3c00;
   position: relative;
 }
-/* line 120, ../sass/index.scss */
+/* line 118, ../sass/index.scss */
 .new-products-show .left {
   top: 40%;
   background: url(../images/sf-ico.png) no-repeat 0 -71px;
   left: 0;
 }
-/* line 128, ../sass/index.scss */
+/* line 126, ../sass/index.scss */
 .new-products-show .right {
   top: 40%;
   background: url(../images/sf-ico.png) no-repeat -13px -71px;
@@ -222,17 +419,17 @@ img {
 }
 
 /*! --------------------------------------------今日主推大牌中间2------------------------------------------------- */
-/* line 138, ../sass/index.scss */
+/* line 136, ../sass/index.scss */
 #command-brand {
   width: 100%;
   background: greenyellow;
   margin-top: 66px;
 }
-/* line 144, ../sass/index.scss */
+/* line 142, ../sass/index.scss */
 #command-brand .command-title {
   height: 112px;
 }
-/* line 151, ../sass/index.scss */
+/* line 149, ../sass/index.scss */
 #command-brand .command-brand-image {
   margin-top: 10px;
   width: 1349px;
@@ -240,30 +437,30 @@ img {
   padding-top: 60px;
   font-size: 0;
 }
-/* line 160, ../sass/index.scss */
+/* line 158, ../sass/index.scss */
 #command-brand .command-brand-image .img-show {
   width: 990px;
   margin: 0 auto;
 }
-/* line 164, ../sass/index.scss */
+/* line 162, ../sass/index.scss */
 #command-brand .command-brand-image .img-show li {
   background: palevioletred;
   width: 315px;
   height: 402px;
   float: left;
 }
-/* line 170, ../sass/index.scss */
+/* line 168, ../sass/index.scss */
 #command-brand .command-brand-image .img-show li a {
   position: relative;
   width: 100%;
   height: 100%;
 }
-/* line 177, ../sass/index.scss */
+/* line 175, ../sass/index.scss */
 #command-brand .command-brand-image .img-show li:nth-of-type(2) {
   margin: 0 18px;
   background: powderblue;
 }
-/* line 184, ../sass/index.scss */
+/* line 182, ../sass/index.scss */
 #command-brand .brand-show {
   width: 990px;
   margin: 0 auto;
@@ -273,19 +470,19 @@ img {
   overflow: hidden;
   background: pink;
 }
-/* line 193, ../sass/index.scss */
+/* line 191, ../sass/index.scss */
 #command-brand .brand-show .left {
   left: 0;
   top: 42%;
   background: url(../images/sf-ico.png) no-repeat 0 -71px;
 }
-/* line 201, ../sass/index.scss */
+/* line 199, ../sass/index.scss */
 #command-brand .brand-show .right {
   right: 0;
   top: 42%;
   background: url(../images/sf-ico.png) no-repeat -13px -71px;
 }
-/* line 210, ../sass/index.scss */
+/* line 208, ../sass/index.scss */
 #command-brand .brand-image {
   width: 920px;
   height: 100%;
@@ -294,20 +491,20 @@ img {
   overflow: hidden;
   position: relative;
 }
-/* line 219, ../sass/index.scss */
+/* line 217, ../sass/index.scss */
 #command-brand .brand-image-move {
   position: absolute;
   white-space: nowrap;
   overflow: visible;
 }
-/* line 224, ../sass/index.scss */
+/* line 222, ../sass/index.scss */
 #command-brand .brand-image-move a {
   width: 68px;
   height: 31px;
   display: inline-block;
   margin: 0 12px;
 }
-/* line 230, ../sass/index.scss */
+/* line 228, ../sass/index.scss */
 #command-brand .brand-image-move a img {
   width: 100%;
   height: 100%;
@@ -315,75 +512,75 @@ img {
 }
 
 /* !--------------------------------------------品牌潮流资讯中间3----------------------------------------------------- */
-/* line 241, ../sass/index.scss */
+/* line 239, ../sass/index.scss */
 #brand-fashion {
   width: 100%;
   height: 602px;
   background: green;
 }
-/* line 247, ../sass/index.scss */
+/* line 245, ../sass/index.scss */
 #brand-fashion .command-title .type {
   font-size: 24px;
   color: #333;
   text-align: center;
   margin: 0;
 }
-/* line 254, ../sass/index.scss */
+/* line 252, ../sass/index.scss */
 #brand-fashion .img-show {
   width: 993px;
   margin: 0 auto;
   padding-top: 10px;
 }
-/* line 260, ../sass/index.scss */
+/* line 258, ../sass/index.scss */
 #brand-fashion .img-show li {
   width: 315px;
   height: 458px;
   float: left;
 }
-/* line 265, ../sass/index.scss */
+/* line 263, ../sass/index.scss */
 #brand-fashion .img-show li a {
   position: relative;
   width: 100%;
   height: 100%;
 }
-/* line 272, ../sass/index.scss */
+/* line 270, ../sass/index.scss */
 #brand-fashion .img-show li:nth-of-type(1) {
   background: palevioletred;
 }
-/* line 279, ../sass/index.scss */
+/* line 277, ../sass/index.scss */
 #brand-fashion .img-show li:nth-of-type(2) {
   background: #666;
   margin: 0 24px;
 }
-/* line 284, ../sass/index.scss */
+/* line 282, ../sass/index.scss */
 #brand-fashion .img-show li:nth-of-type(3) {
   background: palevioletred;
 }
 
 /* !--------------------------------------鞋子热销图片中间4--------------------------------------------------- */
-/* line 292, ../sass/index.scss */
+/* line 290, ../sass/index.scss */
 #shoes-img {
   width: 990px;
   margin: 0 auto;
   background: orangered;
   font-size: 0;
-  margin-top: 20px;
+  margin-top: 46px;
 }
-/* line 300, ../sass/index.scss */
+/* line 298, ../sass/index.scss */
 #shoes-img .bestsellerimg {
   margin-bottom: 110px;
 }
-/* line 303, ../sass/index.scss */
+/* line 301, ../sass/index.scss */
 #shoes-img .bestsellerimg li {
   margin-right: 22px;
   float: left;
   position: relative;
 }
-/* line 308, ../sass/index.scss */
+/* line 306, ../sass/index.scss */
 #shoes-img .bestsellerimg li a {
   display: block;
 }
-/* line 311, ../sass/index.scss */
+/* line 309, ../sass/index.scss */
 #shoes-img .bestsellerimg li a p {
   width: 100%;
   height: 100%;
@@ -399,72 +596,72 @@ img {
   opacity: 0.6;
   line-height: 250px;
 }
-/* line 329, ../sass/index.scss */
+/* line 327, ../sass/index.scss */
 #shoes-img .bestsellerimg li:last-of-type {
   margin-right: 0;
 }
-/* line 333, ../sass/index.scss */
+/* line 331, ../sass/index.scss */
 #shoes-img .bestsellerimg a:hover p {
   display: block;
 }
-/* line 338, ../sass/index.scss */
+/* line 336, ../sass/index.scss */
 #shoes-img .shoes-ad {
   font-size: 0;
   width: 990px;
   height: 444px;
 }
-/* line 343, ../sass/index.scss */
+/* line 341, ../sass/index.scss */
 #shoes-img .shoes-ad img {
   width: 100%;
   height: 100%;
 }
-/* line 348, ../sass/index.scss */
+/* line 346, ../sass/index.scss */
 #shoes-img .bestsellersort {
   height: 528px;
   background: palegreen;
   margin-top: 12px;
 }
-/* line 352, ../sass/index.scss */
+/* line 350, ../sass/index.scss */
 #shoes-img .bestsellersort li {
   float: left;
   margin: 0 22px 29px 0;
 }
-/* line 356, ../sass/index.scss */
+/* line 354, ../sass/index.scss */
 #shoes-img .bestsellersort li a {
   display: block;
   width: 231px;
   height: 194px;
   background: url(../images/laodiexie.jpg) no-repeat 0px -12px;
 }
-/* line 363, ../sass/index.scss */
+/* line 361, ../sass/index.scss */
 #shoes-img .bestsellersort li:nth-of-type(4), #shoes-img .bestsellersort li:nth-of-type(8) {
   margin-right: 0;
 }
-/* line 366, ../sass/index.scss */
+/* line 364, ../sass/index.scss */
 #shoes-img .bestsellersort li:nth-of-type(2) a {
   background-position: -253px -12px;
 }
-/* line 369, ../sass/index.scss */
+/* line 367, ../sass/index.scss */
 #shoes-img .bestsellersort li:nth-of-type(3) a {
   background-position: -506px -12px;
 }
-/* line 372, ../sass/index.scss */
+/* line 370, ../sass/index.scss */
 #shoes-img .bestsellersort li:nth-of-type(4) a {
   background-position: -759px -12px;
 }
-/* line 375, ../sass/index.scss */
+/* line 373, ../sass/index.scss */
 #shoes-img .bestsellersort li:nth-of-type(5) a {
   background-position: 0px -235px;
 }
-/* line 378, ../sass/index.scss */
+/* line 376, ../sass/index.scss */
 #shoes-img .bestsellersort li:nth-of-type(6) a {
   background-position: -253px -235px;
 }
-/* line 381, ../sass/index.scss */
+/* line 379, ../sass/index.scss */
 #shoes-img .bestsellersort li:nth-of-type(7) a {
   background-position: -506px -235px;
 }
-/* line 384, ../sass/index.scss */
+/* line 382, ../sass/index.scss */
 #shoes-img .bestsellersort li:nth-of-type(8) a {
   background-position: -759px -235px;
 }
@@ -533,29 +730,28 @@ img {
   width: 1190px;
   margin: 0 auto;
   margin-top: 25px;
-  background: red;
 }
-/* line 64, ../sass/_footer.scss */
+/* line 62, ../sass/_footer.scss */
 #footer .footer-bot .footer-help li {
   float: left;
   margin-left: 90px;
   color: #fff;
 }
-/* line 70, ../sass/_footer.scss */
+/* line 68, ../sass/_footer.scss */
 #footer .footer-bot .footer-help li:nth-of-type(1) {
   margin-left: 0;
 }
-/* line 75, ../sass/_footer.scss */
+/* line 73, ../sass/_footer.scss */
 #footer .footer-bot .footer-help a {
   color: #666;
   display: block;
   margin-top: 15px;
 }
-/* line 81, ../sass/_footer.scss */
+/* line 79, ../sass/_footer.scss */
 #footer .footer-bot .margin20 {
   margin-top: 20px;
 }
-/* line 85, ../sass/_footer.scss */
+/* line 83, ../sass/_footer.scss */
 #footer .footer-bot .consult {
   display: inline-block;
   vertical-align: middle;
@@ -563,37 +759,90 @@ img {
   height: 13px;
   background: url(../images/css_sprites.png) -124px -140px;
 }
-/* line 93, ../sass/_footer.scss */
+/* line 91, ../sass/_footer.scss */
 #footer .footer-bot a:hover {
   color: #fff;
 }
-/* line 97, ../sass/_footer.scss */
-#footer .footer-bot .certification {
+/* line 95, ../sass/_footer.scss */
+#footer .footer-bot .certification, #footer .footer-bot .friendly-link, #footer .footer-bot .copyright {
   width: 1190px;
   margin: 0 auto;
 }
-/* line 102, ../sass/_footer.scss */
+/* line 100, ../sass/_footer.scss */
 #footer .footer-bot .certification ul {
-  float: left;
+  display: inline-block;
 }
-/* line 106, ../sass/_footer.scss */
+/* line 104, ../sass/_footer.scss */
 #footer .footer-bot .certification li {
   display: inline-block;
   margin-left: 12px;
 }
-/* line 112, ../sass/_footer.scss */
+/* line 110, ../sass/_footer.scss */
 #footer .certification .beian {
   margin-top: 160px;
+  vertical-align: bottom;
 }
 /* line 114, ../sass/_footer.scss */
 #footer .certification .beian img {
   height: 47px;
 }
-/* line 117, ../sass/_footer.scss */
+/* line 118, ../sass/_footer.scss */
 #footer .certification .beian .img1 {
   width: 116px;
 }
-/* line 120, ../sass/_footer.scss */
+/* line 122, ../sass/_footer.scss */
 #footer .certification .beian .img2, #footer .certification .beian .im3 {
   width: 124px;
+}
+/* line 127, ../sass/_footer.scss */
+#footer .certification .erweima {
+  margin-left: 200px;
+  vertical-align: bottom;
+}
+/* line 131, ../sass/_footer.scss */
+#footer .certification .erweima .border img {
+  display: block;
+  padding: 8px 7.5px;
+  background: #fff;
+  margin-bottom: 12px;
+}
+/* line 138, ../sass/_footer.scss */
+#footer .certification .erweima p {
+  color: #fff;
+  text-align: center;
+}
+/* line 143, ../sass/_footer.scss */
+#footer .certification .erweima .padding54 {
+  margin-left: 0;
+  padding-left: 54px;
+}
+/* line 147, ../sass/_footer.scss */
+#footer .certification .erweima .padding54 img {
+  margin-bottom: 12px;
+}
+/* line 153, ../sass/_footer.scss */
+#footer .friendly-link {
+  padding-top: 25px;
+}
+/* line 156, ../sass/_footer.scss */
+#footer .friendly-link li {
+  display: inline-block;
+}
+/* line 159, ../sass/_footer.scss */
+#footer .friendly-link li a {
+  margin: 0 10px;
+  color: #fff;
+}
+/* line 164, ../sass/_footer.scss */
+#footer .friendly-link li .marginleft0 {
+  margin-left: 0;
+}
+/* line 170, ../sass/_footer.scss */
+#footer .copyright {
+  padding: 15px 0 35px;
+  color: #fff;
+}
+/* line 174, ../sass/_footer.scss */
+#footer .copyright a {
+  color: #fff;
 }
