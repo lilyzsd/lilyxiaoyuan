@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+@import "compass/reset";
+
+// 详情页
+.curLct {
+    width: 1190px;
+    margin: 3px auto;
+    font-size: 12px;
+
+    a {
+        color: #333;
+        display: inline-block;
+        line-height: 60px;
+        height: 60px;
+    }
+}
+
+.goods-wrapper {
+    padding: 44px 0 60px;
+    width: 1190px;
+    margin: 0 auto;
+    position: relative;
+    background: green;
+
+    .goodsPic, .shopping-container {
+        float: left;
+    }
+
+    .goodsPic {
+        width: 482px;
+        height: 438px;
+        position: relative;
+        left: 114px;
+        padding-bottom: 41px;
+        overflow: hidden;
+
+        img {
+            width: 480px;
+            height: 480px;
+            display: block;
+        }
+
+        .sf {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100px;
+            height: 100px;
+            background: palevioletred;
+        }
+    }
+
+    
+
+    .goodsblank {
+        height: 605px;
+        float: left;
+        width: 605px;
+        background: pink;
+    }
+
+    .shopping-container {
+        float: left;
+        padding-left: 57px;
+        color: #333;
+        font-family: 'Microsoft YaHei';
+        width: 528px;
+
+        .brand-logo {
+            width: 142px;
+            height: 72px;
+            line-height: 72px;
+            border: 1px solid #f6f6f6;
+            text-align: center;
+
+            a {
+                display: block;
+                width: 100%;
+                height: 100%;
+
+                .brand-logo-img {
+                    padding: 10px 0;
+                }
+            }
+        }
+
+        h1 {}
+    }
+}

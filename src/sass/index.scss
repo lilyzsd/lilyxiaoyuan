@@ -1,8 +1,8 @@
-/* --------------------------------------------------开始写------------------------------------------------------ */
-
 @charset "utf-8";
 
 @import "compass/reset";
+/* --------------------------------------------------开始写------------------------------------------------------ */
+
 
 $page_width: 100%;
 $page_color: #666;
@@ -19,8 +19,6 @@ $page_color: #666;
 body {
     font: 12px/1.5 tahoma,'Microsoft YaHei';
     color: $page_color;
-    font-style: tahoma,'Microsoft YaHei';
-
 }
 
 li {
@@ -59,6 +57,62 @@ img {
     width: $page_width;
     height: 550px;
     background: green;
+    overflow: hidden;
+    position: relative;
+
+    .piclist li {
+        position: absolute;
+        left: 0px;
+        top: 0;
+        opacity: 0;
+
+        img {
+            height: 550px;
+            display: block;
+        }
+    }
+
+    .piclist li.show {
+        opacity: 1;
+    }
+
+    .btnlist {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+
+        li {
+            float: left;
+            width: 31px;
+            height: 6px;
+            background: #fff;
+            text-indent: -99999px;
+            margin-right: 5px;
+            cursor: pointer;
+            opacity: 0.5;
+        }
+    }
+
+    #left,
+    #right {
+        font-size: 64px;
+        color: #fff;
+        position: absolute;
+        top: 150px;
+        text-decoration: none;
+    }
+
+    #left {
+        left: 30px;
+    }
+
+    #right {
+        right: 30px;
+    }
+
+    .btnlist .active {
+        background: #000;
+    }
 }
 
 /* !-------------------------------------------------------新品推荐中间1------------------------------------------------- */
@@ -130,6 +184,66 @@ img {
         background: url(../images/sf-ico.png) no-repeat -13px -71px;
         right: 0;
     }
+
+    .swiper-container {
+        width: 920px;
+        height: 100%;
+        font-size: 0;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+
+        .swiper-sub-item {
+            display: inline-block;
+            width: 210px;
+            padding: 10px;
+            background-color: #fff;
+            font-size: 12px;
+            color: #333;
+            text-align: center;
+
+            .goods-img > a {
+                margin: 30px 0;
+            }
+
+            a {
+                display: block;
+
+                img {
+                    width: 210px;
+                    height: 210px;
+                    background: red;
+                }
+            }
+
+            .logoimg {
+                padding-top: 15px;
+                width: 54px;
+                height: 24px;
+                background: pink;
+                margin: 0 auto;
+            }
+
+            p {
+                margin-top: 10px;
+
+                a {
+                    color: #666;
+                }
+            }
+
+            .price-wrap {
+                margin: 15px 0 10px;
+                font-size: 16px;
+                font-weight: bold;
+                position: relative;
+            }
+        }
+
+        .swiper-sub-item:hover {
+            background-color: #f6f6f6;
+        }
+    }
 }
 
 /*! --------------------------------------------今日主推大牌中间2------------------------------------------------- */
@@ -141,9 +255,6 @@ img {
 
     .command-title {
         height: 112px;
-
-        // 因为新品推荐下面的字体大小不一样，？？解决要删掉
-   
     }
 
     .command-brand-image {
@@ -240,11 +351,12 @@ img {
     width: $page_width;
     height: 602px;
     background: green;
-    // margin-top: 66px;
 
     .command-title .type {
         font-size: 24px;
         color: #333;
+
+        // 要删掉
         text-align: center;
         margin: 0;
     }
@@ -253,35 +365,19 @@ img {
         width: 993px;
         margin: 0 auto;
         padding-top: 10px;
-
-        // 这里加了
-        li {
-            width: 315px;
+        li{
+           width: 315px;
             height: 458px;
-            float: left;
-
-            a {
-                position: relative;
+            float: left;  
+            img {
                 width: 100%;
                 height: 100%;
-            }
+                display: block;
+            } 
         }
-
-        li:nth-of-type(1) {
-            background: palevioletred;
-
-            // 背景图1，2，3要去掉
-       
-        }
-
-        li:nth-of-type(2) {
-            background: #666;
+ li:nth-of-type(2) {
             margin: 0 24px;
-        }
-
-        li:nth-of-type(3) {
-            background: palevioletred;
-        }
+        }    
     }
 }
 
@@ -338,53 +434,62 @@ img {
         width: 990px;
         height: 444px;
 
-            img {
-                width: 100%;
-                height: 100%;
-            }
+        img {
+            width: 100%;
+            height: 100%;
+        }
     }
-    .bestsellersort{
+
+    .bestsellersort {
         height: 528px;
         background: palegreen;
-        margin-top:12px;
-        li{
-            float:left;
+        margin-top: 12px;
+
+        li {
+            float: left;
             margin: 0 22px 29px 0;
 
-            a{
+            a {
                 display: block;
-                width:231px;
+                width: 231px;
                 height: 194px;
-                background: url(../images/laodiexie.jpg) no-repeat 0px -12px;;
+                background: url(../images/laodiexie.jpg) no-repeat 0px -12px;
             }
         }
-        li:nth-of-type(4),li:nth-of-type(8) {
+
+        li:nth-of-type(4), li:nth-of-type(8) {
             margin-right: 0;
         }
-        li:nth-of-type(2) a{
+
+        li:nth-of-type(2) a {
             background-position: -253px -12px;
         }
-        li:nth-of-type(3) a{
+
+        li:nth-of-type(3) a {
             background-position: -506px -12px;
         }
-        li:nth-of-type(4) a{
+
+        li:nth-of-type(4) a {
             background-position: -759px -12px;
         }
-        li:nth-of-type(5) a{
+
+        li:nth-of-type(5) a {
             background-position: 0px -235px;
         }
-        li:nth-of-type(6) a{
+
+        li:nth-of-type(6) a {
             background-position: -253px -235px;
         }
-        li:nth-of-type(7) a{
+
+        li:nth-of-type(7) a {
             background-position: -506px -235px;
         }
-        li:nth-of-type(8) a{
+
+        li:nth-of-type(8) a {
             background-position: -759px -235px;
         }
-
     }
-   
 }
+
 /* --------------------------------尾部--------------- */
 @import "footer";
