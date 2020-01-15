@@ -36,19 +36,31 @@ class Lunbo {
             this.right.click();
         }, 3000);
 
+<<<<<<< HEAD
         this.piclist.hover(() => {
             clearInterval(this.timer);
         }, () => {
             this.timer = setInterval(function () {
+=======
+        this.piclist.hover(()=> {
+            clearInterval(this.timer);
+        }, ()=> {
+            this.timer = setInterval(function() {
+>>>>>>> eed017b2ef64547132f9e6f84d907915e5dcf423
                 clearInterval(this.timer);
                 this.right.click();
             }, 3000);
         });
+<<<<<<< HEAD
 
+=======
+       
+>>>>>>> eed017b2ef64547132f9e6f84d907915e5dcf423
     }
     tabswitch() {//封装tabswitch功能
         this.btns.eq(this.num).addClass('active').siblings(this.btns).removeClass('active');
         this.pics.eq(this.num).addClass('show').siblings(this.btns).removeClass('show');
+<<<<<<< HEAD
 
     }
 
@@ -91,6 +103,16 @@ class render {
     }
 
 }
+=======
+       
+    }
+
+}
+
+
+
+
+>>>>>>> eed017b2ef64547132f9e6f84d907915e5dcf423
 
 //定义模块
 define([], function () {
@@ -98,7 +120,10 @@ define([], function () {
         init: function () {
 
             new Lunbo().init();
+<<<<<<< HEAD
             new render().init();
+=======
+>>>>>>> eed017b2ef64547132f9e6f84d907915e5dcf423
         }
     }
 });

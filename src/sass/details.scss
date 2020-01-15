@@ -16,12 +16,16 @@
     }
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> eed017b2ef64547132f9e6f84d907915e5dcf423
 .goods-wrapper {
     padding: 44px 0 60px;
     width: 1190px;
     margin: 0 auto;
     position: relative;
+<<<<<<< HEAD
 
     .goodsblank {
         height: 605px;
@@ -86,6 +90,53 @@
         font-family: 'Microsoft YaHei';
         width: 528px;
         border: 1px solid red;
+=======
+    background: green;
+
+    .goodsPic, .shopping-container {
+        float: left;
+    }
+
+    .goodsPic {
+        width: 482px;
+        height: 438px;
+        position: relative;
+        left: 114px;
+        padding-bottom: 41px;
+        overflow: hidden;
+
+        img {
+            width: 480px;
+            height: 480px;
+            display: block;
+        }
+
+        .sf {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100px;
+            height: 100px;
+            background: palevioletred;
+        }
+    }
+
+    
+
+    .goodsblank {
+        height: 605px;
+        float: left;
+        width: 605px;
+        background: pink;
+    }
+
+    .shopping-container {
+        float: left;
+        padding-left: 57px;
+        color: #333;
+        font-family: 'Microsoft YaHei';
+        width: 528px;
+>>>>>>> eed017b2ef64547132f9e6f84d907915e5dcf423
 
         .brand-logo {
             width: 142px;
@@ -93,17 +144,28 @@
             line-height: 72px;
             border: 1px solid #f6f6f6;
             text-align: center;
+<<<<<<< HEAD
             border: 1px solid red;
 
             a {
                 display: block;
 
                 img {
+=======
+
+            a {
+                display: block;
+                width: 100%;
+                height: 100%;
+
+                .brand-logo-img {
+>>>>>>> eed017b2ef64547132f9e6f84d907915e5dcf423
                     padding: 10px 0;
                 }
             }
         }
 
+<<<<<<< HEAD
         h1 {
             font-size: 16px;
             margin-top: 25px;
@@ -240,5 +302,8 @@
             }
             */
         }
+=======
+        h1 {}
+>>>>>>> eed017b2ef64547132f9e6f84d907915e5dcf423
     }
 }
