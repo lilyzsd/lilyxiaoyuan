@@ -12,10 +12,14 @@
     <title>优购时尚商城-时尚服饰鞋包网购首选-优生活，购时尚！</title>
 
     <link rel="stylesheet" href="stylesheets/index.css">
+    <script src="script/require.js" defer async="true" data-main="script/main.js" id="currentpage"
+        target-page="script/index_module.js"></script>
+
+
 </head>
 
 <body>
-
+     
     <!--------------------------------------头部上面------------------------------------------------------>
     <div id="header-top">
         <ul class="head-left">
@@ -146,9 +150,23 @@
     </div>
     <!--------------------------------------banner轮播选项卡------------------------------------------------------>
     <div id="banner">
-        轮播选项卡
-
+        <ul class="piclist">
+            <li class="show">
+                <img src="https://i2.ygimg.cn/pics/shop/cms/home/2020/01/06/48920200106T183253.jpg" alt="">
+            </li>
+            <li>
+                <img src="https://i2.ygimg.cn/pics/shop/cms/home/2019/12/17/10220191217T150316.jpg" alt="">
+            </li>
+        </ul>
+        <ol class="btnlist">
+            <li class="active">0</li>
+            <li>1</li>
+        </ol>
+        <a href="javascript:;" id="left" style="display: none;">&lt;</a>
+        <a href="javascript:;" id="right" style="display: none;">&gt;</a>
     </div>
+
+
     <!--------------------------------------新品推荐中间1------------------------------------------------------>
     <div id="command-new-products">
         <div class="command-title">
@@ -161,6 +179,130 @@
             </div>
         </div>
         <div class="new-products-show">
+            <!-- 结构渲染 22222-->
+           <div class="swiper-container">
+                <!-- <div class="swiper-sub-item">
+                    <div class="goods-img">
+                       <a href="#" title="休闲 满帮鞋" class="">
+                           <img src="" alt="休闲 满帮鞋">
+                       </a>
+                    </div>
+                    <img src="" alt="百丽" class="logoimg">
+                    <p>
+                        <a href="#" >
+                            休闲 满帮鞋
+                        </a>
+                    </p>
+                    <div class="price-wrap">
+                      ￥<span>859</span>
+                    </div>
+                </div>
+                <div class="swiper-sub-item">
+                    <div class="goods-img">
+                       <a href="#" title="休闲 满帮鞋">
+                           <img src="" alt="休闲 满帮鞋">
+                       </a>
+                    </div>
+                    <img src="" alt="百丽" class="logoimg">
+                    <p>
+                        <a href="#" >
+                            休闲 满帮鞋
+                        </a>
+                    </p>
+                    <div class="price-wrap">
+                      ￥<span>859</span>
+
+                    </div>
+                </div>
+                <div class="swiper-sub-item">
+                    <div class="goods-img">
+                       <a href="#" title="休闲 满帮鞋">
+                           <img src="" alt="休闲 满帮鞋">
+                       </a>
+                    </div>
+                    <img src="" alt="百丽" class="logoimg">
+                    <p>
+                        <a href="#" >
+                            休闲 满帮鞋
+                        </a>
+                    </p>
+                    <div class="price-wrap">
+                      ￥<span>859</span>
+
+                    </div>
+                </div>
+                <div class="swiper-sub-item">
+                    <div class="goods-img">
+                       <a href="#" title="休闲 满帮鞋">
+                           <img src="" alt="休闲 满帮鞋">
+                       </a>
+                    </div>
+                    <img src="" alt="百丽" class="logoimg">
+                    <p>
+                        <a href="#" >
+                            休闲 满帮鞋
+                        </a>
+                    </p>
+                    <div class="price-wrap">
+                      ￥<span>859</span>
+
+                    </div>
+                </div>
+                <div class="swiper-sub-item">
+                    <div class="goods-img">
+                       <a href="#" title="休闲 满帮鞋">
+                           <img src="" alt="休闲 满帮鞋">
+                       </a>
+                    </div>
+                    <img src="" alt="百丽" class="logoimg">
+                    <p>
+                        <a href="#" >
+                            休闲 满帮鞋
+                        </a>
+                    </p>
+                    <div class="price-wrap">
+                      ￥<span>859</span>
+
+                    </div>
+                </div>
+                <div class="swiper-sub-item">
+                    <div class="goods-img">
+                       <a href="#" title="休闲 满帮鞋">
+                           <img src="" alt="休闲 满帮鞋">
+                       </a>
+                    </div>
+                    <img src="" alt="百丽" class="logoimg">
+                    <p>
+                        <a href="#" >
+                            休闲 满帮鞋
+                        </a>
+                    </p>
+                    <div class="price-wrap">
+                      ￥<span>859</span>
+
+                    </div>
+                </div>
+                <div class="swiper-sub-item">
+                    <div class="goods-img">
+                       <a href="#" title="休闲 满帮鞋">
+                           <img src="" alt="休闲 满帮鞋">
+                       </a>
+                    </div>
+                    <img src="" alt="百丽" class="logoimg">
+                    <p>
+                        <a href="#" >
+                            休闲 满帮鞋
+                        </a>
+                    </p>
+                    <div class="price-wrap">
+                      ￥<span>859</span>
+
+                    </div>
+                </div> -->
+                
+            </div>
+
+
             <a href="javascript:;" class="left"></a>
             <a href="javascript:;" class="right"></a>
         </div>
@@ -281,17 +423,17 @@
         <ul class="img-show clear">
             <li>
                 <a href="#">
-                    <img src="" alt="">
+                    <img src="images/pinpai1.PNG" alt="">
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img src="" alt="">
+                    <img src="images/pingpai2.PNG" alt="">
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img src="" alt="">
+                    <img src="images/pinpai3.PNG" alt="">
                 </a>
             </li>
         </ul>

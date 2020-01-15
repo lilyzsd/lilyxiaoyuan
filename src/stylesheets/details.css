@@ -1,0 +1,292 @@
+/* line 5, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 6, ../sass/details.scss */
+.curLct {
+  width: 1190px;
+  margin: 3px auto;
+  font-size: 12px;
+}
+/* line 11, ../sass/details.scss */
+.curLct a {
+  color: #333;
+  display: inline-block;
+  line-height: 60px;
+  height: 60px;
+}
+
+/* line 20, ../sass/details.scss */
+.goods-wrapper {
+  padding: 44px 0 60px;
+  width: 1190px;
+  margin: 0 auto;
+  position: relative;
+}
+/* line 26, ../sass/details.scss */
+.goods-wrapper .goodsblank {
+  height: 605px;
+  float: left;
+  width: 605px;
+  background: pink;
+  position: relative;
+}
+/* line 33, ../sass/details.scss */
+.goods-wrapper .goodsblank .goodsPic {
+  width: 482px;
+  height: 438px;
+  position: absolute;
+  left: 114px;
+  padding-bottom: 41px;
+  background: green;
+}
+/* line 43, ../sass/details.scss */
+.goods-wrapper #spec-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 48, ../sass/details.scss */
+.goods-wrapper #spec-list .list-li {
+  width: 75px;
+  padding-top: 5px;
+}
+/* line 52, ../sass/details.scss */
+.goods-wrapper #spec-list .list-li img {
+  padding: 2px;
+  border: 1px solid #ddd;
+  width: 60px;
+  height: 60px;
+  border: 1px solid red;
+}
+/* line 65, ../sass/details.scss */
+.goods-wrapper .zoomdiv {
+  width: 470px;
+  height: 440px;
+  display: block;
+  z-index: 100;
+  position: absolute;
+  left: 130px;
+  top: 524px;
+  margin-left: 500px;
+  margin-top: -480px;
+  border: 1px solid #000;
+  overflow: hidden;
+  font-size: 0;
+}
+/* line 81, ../sass/details.scss */
+.goods-wrapper .shopping-container {
+  font-size: 12px;
+  float: left;
+  padding-left: 44px;
+  color: #333;
+  font-family: 'Microsoft YaHei';
+  width: 528px;
+  border: 1px solid red;
+}
+/* line 90, ../sass/details.scss */
+.goods-wrapper .shopping-container .brand-logo {
+  width: 142px;
+  height: 72px;
+  line-height: 72px;
+  border: 1px solid #f6f6f6;
+  text-align: center;
+  border: 1px solid red;
+}
+/* line 98, ../sass/details.scss */
+.goods-wrapper .shopping-container .brand-logo a {
+  display: block;
+}
+/* line 101, ../sass/details.scss */
+.goods-wrapper .shopping-container .brand-logo a img {
+  padding: 10px 0;
+}
+/* line 107, ../sass/details.scss */
+.goods-wrapper .shopping-container h1 {
+  font-size: 16px;
+  margin-top: 25px;
+  font-weight: normal;
+}
+/* line 113, ../sass/details.scss */
+.goods-wrapper .shopping-container .price {
+  margin-top: 40px;
+  font-family: 'Microsoft YaHei';
+  text-align: left;
+}
+/* line 118, ../sass/details.scss */
+.goods-wrapper .shopping-container .price i {
+  font-size: 30px;
+}
+/* line 123, ../sass/details.scss */
+.goods-wrapper .shopping-container .summary-line {
+  margin-top: 40px;
+  height: 0;
+  overflow: hidden;
+  border-bottom: 1px dotted #a7a7a7;
+  margin-bottom: 15px;
+}
+/* line 131, ../sass/details.scss */
+.goods-wrapper .shopping-container .buy > .color {
+  margin-top: 20px;
+  font-size: 12px;
+}
+/* line 135, ../sass/details.scss */
+.goods-wrapper .shopping-container .buy > .color span {
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 140, ../sass/details.scss */
+.goods-wrapper .shopping-container .buy > .color .prodSpec {
+  display: inline-block;
+  width: 400px;
+  margin-left: 2px;
+}
+/* line 145, ../sass/details.scss */
+.goods-wrapper .shopping-container .buy > .color .prodSpec a {
+  display: inline-block;
+  margin-bottom: 5px;
+  padding: 1px;
+  margin-left: 8px;
+  border: 1px solid #ddd;
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+/* line 163, ../sass/details.scss */
+.goods-wrapper .size {
+  margin-top: 35px;
+}
+/* line 166, ../sass/details.scss */
+.goods-wrapper .size span {
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 171, ../sass/details.scss */
+.goods-wrapper .size .prodSpe {
+  margin-left: 10px;
+  width: 320px;
+}
+/* line 175, ../sass/details.scss */
+.goods-wrapper .size .prodSpe a {
+  border: 1px solid #ccc;
+  min-width: 40px;
+  width: 40px;
+  overflow: visible;
+  height: 20px;
+  line-height: 20px;
+  padding: 0 4px 0 4px;
+  margin-bottom: 10px;
+  display: inline-block;
+  background: #fff;
+  margin-right: 8px;
+  text-align: center;
+  cursor: pointer;
+}
+/* line 197, ../sass/details.scss */
+.goods-wrapper .count {
+  margin-top: 25px;
+}
+/* line 200, ../sass/details.scss */
+.goods-wrapper .count span {
+  height: 30px;
+  line-height: 30px;
+  margin-right: 10px;
+  display: inline-block;
+}
+/* line 207, ../sass/details.scss */
+.goods-wrapper .count input {
+  width: 60px;
+  height: 30px;
+  font-size: 14px;
+  color: #666;
+}
+/* line 215, ../sass/details.scss */
+.goods-wrapper .add-cart {
+  margin-top: 30px;
+}
+/* line 218, ../sass/details.scss */
+.goods-wrapper .add-cart li {
+  float: left;
+  /*  a:active{
+       color: #fff;
+       background: #333;
+   } 
+   a{
+        color: #fff;
+       background: #333;
+   }
+   */
+}
+/* line 221, ../sass/details.scss */
+.goods-wrapper .add-cart li a {
+  display: inline-block;
+  margin-right: 20px;
+  width: 222px;
+  height: 46px;
+  line-height: 46px;
+  font-size: 20px;
+  color: #fff;
+  background: #333;
+  text-align: center;
+}

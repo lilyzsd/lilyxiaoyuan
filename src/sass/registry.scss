@@ -1,0 +1,207 @@
+@charset "utf-8";
+
+@import "compass/reset";
+
+/* --------------------------------------登录注册公共样式头部---------------------------------------- */
+$page_width: 100%;
+$page_color: #666;
+
+%arrow {
+    width: 12px;
+    height: 22px;
+    display: inline-block;
+    position: absolute;
+    cursor: pointer;
+    color: $page_color;
+}
+
+body {
+    font: 12px/1.5 tahoma,'Microsoft YaHei';
+    color: $page_color;
+    font-style: tahoma,'Microsoft YaHei';
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+}
+
+.clear:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+@import "top";
+
+/* !----------------------------------------开始写registry样式----------------------------------------- */
+.uc_hd {
+    height: 42px;
+    padding: 13px 0px;
+   
+    width: 990px;
+    margin: 0 auto;
+
+    h2 {
+        padding: 5px 30px 5px 0;
+        border-right: 1px solid #e6e6e6;
+        margin-right: 30px;
+
+        a {
+            color: #666;
+            display: inline-block;
+        }
+    }
+
+    h2, p {
+        float: left;
+    }
+
+    p {
+        font: 18px/40px normal;
+    }
+}
+
+/* ----------------注册--------- */
+
+.cen-new {
+    position: relative;
+    width: 100%;
+    height: 553px;
+    background: red;
+
+    .loginphoto {
+        display: block;
+        width: 100%;
+        height: 553px;
+        background: url(../images/loginphoto.jpg) no-repeat top center;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .nreg_box {
+        background: #fff;
+        box-sizing: border-box;
+        height: 450px;
+        margin-top: 12px;
+        width: 378px;
+        position: absolute;
+        z-index: 5;
+        left: 50%;
+        margin-left: 115px;
+        top: 0;
+
+        ul {
+            margin: 24px 15px 0 15px;
+            border-bottom: 1px solid #f3f3f3;
+
+            li {
+                width: 123px;
+                float: left;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+
+                a {
+                    display: block;
+                    color: #fff;
+                }
+            }
+
+            .tab_sig {
+                margin-left: 53px;
+                margin-right: 5px;
+            }
+
+            .tab_sig a {
+                background: #333;
+            }
+
+            .tab_reg a {
+                background: #f3f3f3;
+                color: #666;
+            }
+        }
+
+        form {
+            width: 310px;
+           
+            height: 287px;
+            margin: 30px 0 0;
+            margin-left: 33px;
+
+            .nreg_input_bg {
+                border: 1px solid #e3e2e2;
+                box-sizing: border-box;
+                height: 38px;
+                margin-bottom: 28px;
+
+               .f1 {
+                    background: 0;
+                    border: 0;
+                    float: right;
+                    height: 36px;
+                    line-height: 36px;
+                    padding: 0;
+                    width: 245px;
+                  
+                }
+            }
+
+            .phone{
+                line-height: 38px;
+                display: inline-block;
+                height: 38px;
+                margin-left: 10px;
+                color: #000;
+
+            }
+            .phone:hover{
+                color: #e60012;
+            }
+           
+
+            .forget {
+                
+                text-align: right;
+                margin-right: 17px;
+              
+                line-height: 26px;
+               
+                color: #666;
+            }
+
+            .nlog_submit {
+                background: #000;
+                border: 0;
+                color: #fff;
+                font-size: 16px;
+                height: 40px;
+                line-height: 40px;
+                width: 312px;
+            }
+
+            .f_black {
+                color: #999;
+                margin-top: 10px;
+                text-align: center;
+            }
+
+        //    .ensure{
+        //        margin-top: 20px;
+        //    }
+        }
+    }
+}
+
+/* --------------------------------------登录注册公共样式尾部---------------------------------------- */
+@import "loginfooter";
+

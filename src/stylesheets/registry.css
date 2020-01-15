@@ -1,0 +1,495 @@
+@charset "UTF-8";
+/* line 5, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* --------------------------------------登录注册公共样式头部---------------------------------------- */
+/* line 18, ../sass/registry.scss */
+body {
+  font: 12px/1.5 tahoma,'Microsoft YaHei';
+  color: #666;
+  font-style: tahoma,'Microsoft YaHei';
+}
+
+/* line 24, ../sass/registry.scss */
+li {
+  list-style: none;
+}
+
+/* line 28, ../sass/registry.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 32, ../sass/registry.scss */
+img {
+  display: block;
+}
+
+/* line 36, ../sass/registry.scss */
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* ！--------------------------------------------------头部------------------------------------------------------ */
+/* line 4, ../sass/_top.scss */
+#header-top {
+  width: 100%;
+  height: 40px;
+  background: #333;
+  position: relative;
+}
+/* line 10, ../sass/_top.scss */
+#header-top .head-left {
+  float: left;
+  margin-left: 145px;
+}
+/* line 15, ../sass/_top.scss */
+#header-top .head-right {
+  float: right;
+  margin-right: 92px;
+}
+/* line 19, ../sass/_top.scss */
+#header-top .head-right .pading-r11 {
+  padding-right: 11px;
+}
+/* line 23, ../sass/_top.scss */
+#header-top .head-right .padding11 {
+  padding: 0 11px;
+}
+/* line 27, ../sass/_top.scss */
+#header-top .head-right .padding22 {
+  padding: 0 22px;
+  position: relative;
+}
+/* line 31, ../sass/_top.scss */
+#header-top .head-right .padding22 .notice-list {
+  position: absolute;
+  width: 180px;
+  background: #fff;
+  border: 1px solid #eee;
+  margin-top: 4px;
+  padding: 15px 15px 30px 20px;
+  z-index: 10000;
+  right: 12px;
+  top: 40px;
+  display: none;
+}
+/* line 43, ../sass/_top.scss */
+#header-top .head-right .padding22 .notice-list a {
+  display: block;
+  color: #666;
+  line-height: 20px;
+  font-family: 'Microsoft YaHei';
+}
+/* line 50, ../sass/_top.scss */
+#header-top .head-right .padding22 .notice-list .item {
+  padding-bottom: 8px;
+  border-bottom: #eee 1px solid;
+}
+/* line 55, ../sass/_top.scss */
+#header-top .head-right .padding22 .notice-list .item1 {
+  padding-top: 10px;
+}
+/* line 61, ../sass/_top.scss */
+#header-top .head-right .padding22:hover .notice-list {
+  display: block;
+}
+/* line 65, ../sass/_top.scss */
+#header-top .head-right .margin-l13 {
+  margin-left: 13px;
+}
+/* line 69, ../sass/_top.scss */
+#header-top .head-right .collect i {
+  display: inline-block;
+  width: 12px;
+  height: 11px;
+  background: url(../images/css_sprites.png) -78px -174px;
+  padding-right: 5px;
+  vertical-align: middle;
+}
+/* line 78, ../sass/_top.scss */
+#header-top .head-right .shopping-bag i {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: url(../images/css_sprites.png) -10px -197px;
+  padding: 4px 2px 0 0;
+  vertical-align: middle;
+}
+/* line 88, ../sass/_top.scss */
+#header-top li {
+  display: inline-block;
+  line-height: 40px;
+  font-family: '宋体';
+}
+/* line 93, ../sass/_top.scss */
+#header-top li a {
+  color: #fff;
+}
+/* line 97, ../sass/_top.scss */
+#header-top li a:hover {
+  color: #666;
+}
+/* line 101, ../sass/_top.scss */
+#header-top li .scan-code {
+  position: relative;
+}
+/* line 104, ../sass/_top.scss */
+#header-top li .scan-code .scodecontent {
+  position: absolute;
+  display: none;
+  z-index: 10000;
+  left: -60px;
+  width: 140px;
+  background: #fff;
+  margin-top: 4px;
+  border: 1px solid #eee;
+}
+/* line 115, ../sass/_top.scss */
+#header-top li .scan-code .scodecontent img {
+  width: 120px;
+  height: 120px;
+  margin: 10px auto 12px;
+  display: block;
+}
+/* line 122, ../sass/_top.scss */
+#header-top li .scan-code .scodecontent span {
+  display: block;
+  margin: 10px 0 18px;
+  line-height: 0;
+  color: #333;
+  text-align: center;
+}
+/* line 131, ../sass/_top.scss */
+#header-top li a:hover .scodecontent {
+  display: block;
+}
+/* line 136, ../sass/_top.scss */
+#header-top .head-left li:nth-of-type(2) {
+  margin-left: 20px;
+}
+
+/* line 141, ../sass/_top.scss */
+#header-bottom {
+  width: 100%;
+  height: 219px;
+}
+/* line 145, ../sass/_top.scss */
+#header-bottom .header-logo {
+  width: 100%;
+  height: 168px;
+  background: pink;
+}
+/* line 150, ../sass/_top.scss */
+#header-bottom .header-logo a {
+  display: block;
+  width: 98px;
+  height: 58px;
+  margin: 0 auto;
+  padding: 55px 0;
+}
+/* line 159, ../sass/_top.scss */
+#header-bottom .header-nav {
+  width: 1190px;
+  margin: 0 auto;
+}
+/* line 163, ../sass/_top.scss */
+#header-bottom .header-nav .nav {
+  float: left;
+  width: 930px;
+  height: 50px;
+}
+/* line 169, ../sass/_top.scss */
+#header-bottom .header-nav .nav li {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 20px;
+  width: 80px;
+  line-height: 50px;
+  padding: 0 15px;
+}
+/* line 177, ../sass/_top.scss */
+#header-bottom .header-nav .nav li a {
+  font-weight: bold;
+  color: #333;
+}
+/* line 183, ../sass/_top.scss */
+#header-bottom .header-nav .nav li:hover a {
+  text-decoration: underline;
+}
+/* line 188, ../sass/_top.scss */
+#header-bottom .header-nav .search {
+  float: right;
+  margin-top: 15px;
+  margin-left: 80px;
+}
+/* line 192, ../sass/_top.scss */
+#header-bottom .header-nav .search form {
+  width: 180px;
+  height: 22px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 2px;
+  position: relative;
+}
+/* line 198, ../sass/_top.scss */
+#header-bottom .header-nav .search form input {
+  padding: 0;
+  width: 160px;
+  border: 0;
+  outline: 0;
+  font-size: 12px;
+  height: 20px;
+}
+/* line 207, ../sass/_top.scss */
+#header-bottom .header-nav .search form .searchmenu {
+  width: 180px;
+  top: 29px;
+  background: none repeat scroll 0 0 #fff;
+  box-shadow: 0 0 5px #ccc;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: 999;
+  font-size: 12px;
+  color: #333;
+}
+/* line 221, ../sass/_top.scss */
+#header-bottom .header-nav .search form .btn-search {
+  display: inline-block;
+  cursor: pointer;
+  width: 15px;
+  height: 16px;
+  background: url(../images/css_sprites.png) -177px -10px;
+}
+
+/* !----------------------------------------开始写registry样式----------------------------------------- */
+/* line 45, ../sass/registry.scss */
+.uc_hd {
+  height: 42px;
+  padding: 13px 0px;
+  width: 990px;
+  margin: 0 auto;
+}
+/* line 52, ../sass/registry.scss */
+.uc_hd h2 {
+  padding: 5px 30px 5px 0;
+  border-right: 1px solid #e6e6e6;
+  margin-right: 30px;
+}
+/* line 57, ../sass/registry.scss */
+.uc_hd h2 a {
+  color: #666;
+  display: inline-block;
+}
+/* line 63, ../sass/registry.scss */
+.uc_hd h2, .uc_hd p {
+  float: left;
+}
+/* line 67, ../sass/registry.scss */
+.uc_hd p {
+  font: 18px/40px normal;
+}
+
+/* ----------------注册--------- */
+/* line 74, ../sass/registry.scss */
+.cen-new {
+  position: relative;
+  width: 100%;
+  height: 553px;
+  background: red;
+}
+/* line 80, ../sass/registry.scss */
+.cen-new .loginphoto {
+  display: block;
+  width: 100%;
+  height: 553px;
+  background: url(../images/loginphoto.jpg) no-repeat top center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 90, ../sass/registry.scss */
+.cen-new .nreg_box {
+  background: #fff;
+  box-sizing: border-box;
+  height: 450px;
+  margin-top: 12px;
+  width: 378px;
+  position: absolute;
+  z-index: 5;
+  left: 50%;
+  margin-left: 115px;
+  top: 0;
+}
+/* line 102, ../sass/registry.scss */
+.cen-new .nreg_box ul {
+  margin: 24px 15px 0 15px;
+  border-bottom: 1px solid #f3f3f3;
+}
+/* line 106, ../sass/registry.scss */
+.cen-new .nreg_box ul li {
+  width: 123px;
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+/* line 113, ../sass/registry.scss */
+.cen-new .nreg_box ul li a {
+  display: block;
+  color: #fff;
+}
+/* line 119, ../sass/registry.scss */
+.cen-new .nreg_box ul .tab_sig {
+  margin-left: 53px;
+  margin-right: 5px;
+}
+/* line 124, ../sass/registry.scss */
+.cen-new .nreg_box ul .tab_sig a {
+  background: #333;
+}
+/* line 128, ../sass/registry.scss */
+.cen-new .nreg_box ul .tab_reg a {
+  background: #f3f3f3;
+  color: #666;
+}
+/* line 134, ../sass/registry.scss */
+.cen-new .nreg_box form {
+  width: 310px;
+  height: 287px;
+  margin: 30px 0 0;
+  margin-left: 33px;
+}
+/* line 141, ../sass/registry.scss */
+.cen-new .nreg_box form .nreg_input_bg {
+  border: 1px solid #e3e2e2;
+  box-sizing: border-box;
+  height: 38px;
+  margin-bottom: 28px;
+}
+/* line 147, ../sass/registry.scss */
+.cen-new .nreg_box form .nreg_input_bg .f1 {
+  background: 0;
+  border: 0;
+  float: right;
+  height: 36px;
+  line-height: 36px;
+  padding: 0;
+  width: 245px;
+}
+/* line 159, ../sass/registry.scss */
+.cen-new .nreg_box form .phone {
+  line-height: 38px;
+  display: inline-block;
+  height: 38px;
+  margin-left: 10px;
+  color: #000;
+}
+/* line 167, ../sass/registry.scss */
+.cen-new .nreg_box form .phone:hover {
+  color: #e60012;
+}
+/* line 172, ../sass/registry.scss */
+.cen-new .nreg_box form .forget {
+  text-align: right;
+  margin-right: 17px;
+  line-height: 26px;
+  color: #666;
+}
+/* line 182, ../sass/registry.scss */
+.cen-new .nreg_box form .nlog_submit {
+  background: #000;
+  border: 0;
+  color: #fff;
+  font-size: 16px;
+  height: 40px;
+  line-height: 40px;
+  width: 312px;
+}
+/* line 192, ../sass/registry.scss */
+.cen-new .nreg_box form .f_black {
+  color: #999;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* --------------------------------------登录注册公共样式尾部---------------------------------------- */
+/* !--------------------------------login尾部---------------------- */
+/* line 3, ../sass/_loginfooter.scss */
+.login-footer {
+  display: flex;
+  justify-content: center;
+}
+/* line 7, ../sass/_loginfooter.scss */
+.login-footer p {
+  padding-top: 20px;
+}
+/* line 9, ../sass/_loginfooter.scss */
+.login-footer p a {
+  padding: 0 20px;
+  color: #AAA;
+}
